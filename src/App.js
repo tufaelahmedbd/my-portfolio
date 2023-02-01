@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div className="app">
       <div className="noise"></div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
