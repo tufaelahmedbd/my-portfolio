@@ -1,4 +1,5 @@
 import Project from "./Project";
+import SectionTitle from "./SectionTitle";
 const data = [
   {
     id: 1,
@@ -8,7 +9,7 @@ const data = [
     description:
       "Foodverse is a food website featuring detailed descriptions and ingredients for various food items. It has a fast search bar and users can save items to a favorites list.",
     tools: ["React.js", "React-Router", "TailwindCSS"],
-    liveLink: "foodverse-tufael.netlify.app/",
+    liveLink: "https://foodverse-tufael.netlify.app/",
     frontEndLink: "https://github.com/tufaelahmedbd/foodverse",
   },
   {
@@ -19,7 +20,7 @@ const data = [
     description:
       "This is a Todo application built with ReactJS and Hooks, using TailwindCSS for styling. The app allows users to create, update, delete, and add todo tasks. The user interface is responsive and user-friendly",
     tools: ["React.js", "Hooks", "GSAP", "TailwindCSS"],
-    liveLink: "todo-app-tufael.netlify.app/",
+    liveLink: "https://todo-app-tufael.netlify.app/",
     frontEndLink: "https://github.com/tufaelahmedbd/todo-app",
   },
   {
@@ -30,16 +31,14 @@ const data = [
     description:
       "Immemorial is a website focused on 90's music items. It uses ReactJS and GSAP to deliver a smooth user experience with eye-catching animations. The website is designed to provide an enjoyable and memorable way to explore classic 90's music items.",
     tools: ["React.js", "React-Router", "GSAP", "TailwindCSS"],
-    liveLink: "immemorial-tufael.netlify.app/",
+    liveLink: "https://immemorial-tufael.netlify.app/",
     frontEndLink: "https://github.com/tufaelahmedbd/immemorial",
   },
 ];
 const Projects = () => {
   return (
     <div className="projects container mx-auto mt-40" id="projects">
-      <div className="overflow-hidden">
-        <h2 className="section-title">Projects</h2>
-      </div>
+      <SectionTitle title="Projects" />
       <div className="projects-wrapper mt-40 flex flex-col gap-40">
         {data.map((project) => (
           <Project key={project.id} project={project} />
