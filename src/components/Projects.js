@@ -19,7 +19,7 @@ const data = [
     img2: "https://res.cloudinary.com/duunz0l4s/image/upload/v1675415032/my-portfolio/todo1_v89voz.png",
     description:
       "This is a Todo application built with ReactJS and Hooks, using TailwindCSS for styling. The app allows users to create, update, delete, and add todo tasks. The user interface is responsive and user-friendly",
-    tools: ["React.js", "Hooks", "GSAP", "TailwindCSS"],
+    tools: ["React.js", "Hooks", "TailwindCSS"],
     liveLink: "https://todo-app-tufael.netlify.app/",
     frontEndLink: "https://github.com/tufaelahmedbd/todo-app",
   },
