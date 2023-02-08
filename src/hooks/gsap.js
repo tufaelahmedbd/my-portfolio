@@ -133,3 +133,79 @@ export const useProjectLeftRightReveal = (items, delay = 0) => {
     );
   }, [items, delay]);
 };
+
+export const useSkillLineReveal = (items) => {
+  useEffect(() => {
+    items.forEach((el) =>
+      gsap.to(el, {
+        scrollTrigger: {
+          trigger: el,
+          onEnter() {
+            el.classList.add("reveal");
+          },
+        },
+      })
+    );
+  }, [items]);
+};
+
+export const useSkillTextReveal = (el) => {
+  useEffect(() => {
+    gsap.fromTo(
+      el,
+      {
+        y: 200,
+      },
+      {
+        y: 0,
+        duration: 1,
+        ease: "power4.out",
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: el,
+        },
+      }
+    );
+  }, [el]);
+};
+export const useFooterReveal = (el) => {
+  useEffect(() => {
+    gsap.fromTo(
+      el.current,
+      {
+        y: -100,
+      },
+      {
+        y: 0,
+        duration: 1,
+        ease: "power4.out",
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: el.current,
+        },
+      }
+    );
+  }, [el]);
+};
+
+export const useInputRefReveal = (items, delay = 0) => {
+  useEffect(() => {
+    const el = items.map((item) => item.current);
+    gsap.fromTo(
+      el,
+      {
+        y: 200,
+      },
+      {
+        y: 0,
+        duration: 2,
+        delay,
+        ease: "power4.out",
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: el,
+        },
+      }
+    );
+  }, [items, delay]);
+};

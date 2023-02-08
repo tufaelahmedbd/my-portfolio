@@ -1,6 +1,14 @@
+import { useRef } from "react";
 import SectionTitle from "./SectionTitle";
+import { useInputRefReveal } from "../hooks/gsap";
 
 const Contact = () => {
+  const inputRef = useRef(null);
+  const input2Ref = useRef(null);
+  const input3Ref = useRef(null);
+  const input4Ref = useRef(null);
+  const inputRefs = [inputRef, input2Ref, input3Ref, input4Ref];
+  useInputRefReveal(inputRefs);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -20,6 +28,7 @@ const Contact = () => {
             name="fullname"
             required
             className="fullname bg-transparent border py-16 px-28 rounded-full border-white/20 outline-none focus:border-cyan-400 duration-500 w-full"
+            ref={inputRef}
           />
         </div>
         <div className="form-control overflow-hidden">
@@ -29,6 +38,7 @@ const Contact = () => {
             name="email"
             required
             className="email bg-transparent border py-16 px-28 rounded-full border-white/20 outline-none focus:border-cyan-400 duration-500 w-full"
+            ref={input2Ref}
           />
         </div>
         <div className="form-control overflow-hidden">
@@ -39,6 +49,7 @@ const Contact = () => {
             rows="1"
             cols="30"
             className="message bg-transparent border py-16 px-28 rounded-full border-white/20 outline-none focus:border-cyan-400 duration-500 w-full resize-none"
+            ref={input3Ref}
           />
         </div>
         <div className="form-control overflow-hidden">
@@ -48,6 +59,7 @@ const Contact = () => {
             name="email"
             required
             className=" uppercase bg-transparent border py-16 px-28 rounded-full border-white/20  hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500 w-full"
+            ref={input4Ref}
           />
         </div>
       </form>
