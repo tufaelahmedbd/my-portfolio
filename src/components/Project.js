@@ -10,9 +10,9 @@ const Project = ({ project }) => {
   useProjectLeftRightReveal(projectsRefs);
 
   return (
-    <div className="project grid grid-cols-5 overflow-hidden ">
+    <div className="project grid grid-cols-1 xl:grid-cols-5 gap-20 overflow-hidden ">
       <div
-        className="project-left col-span-3 flex  flex-col gap-10 "
+        className="project-left xl:col-span-3 flex  flex-col gap-10 "
         ref={projectLeftRef}
       >
         <span className="text-9xl text-white/20">
@@ -57,7 +57,7 @@ const Project = ({ project }) => {
         </div>
       </div>
       <div
-        className="project-right col-span-2 justify-self-end "
+        className="project-right xl:col-span-2 xl:justify-self-end row-start-1 xl:row-auto"
         ref={projectRightRef}
       ></div>
     </div>

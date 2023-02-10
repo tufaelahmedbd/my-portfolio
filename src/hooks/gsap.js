@@ -198,7 +198,7 @@ export const useInputRefReveal = (items, delay = 0) => {
       },
       {
         y: 0,
-        duration: 2,
+        duration: 1,
         delay,
         ease: "power4.out",
         stagger: 0.2,

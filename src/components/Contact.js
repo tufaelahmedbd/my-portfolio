@@ -20,7 +20,10 @@ const Contact = () => {
   return (
     <div className="contact container mx-auto mt-40" id="contact">
       <SectionTitle title="Contact" />
-      <form onSubmit={sendEmail} className=" mt-40 grid grid-cols-2 gap-20">
+      <form
+        onSubmit={sendEmail}
+        className=" mt-40 grid grid-cols-1 lg:grid-cols-2 gap-20"
+      >
         <div className="form-control overflow-hidden">
           <input
             type="text"
