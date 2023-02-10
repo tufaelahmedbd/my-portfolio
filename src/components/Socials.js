@@ -5,27 +5,27 @@ const data = [
   {
     id: 1,
     title: "Facebook",
-    url: "facebook.com/tufaelahmedbd/",
+    url: "https://www.facebook.com/tufaelahmedbd/",
   },
   {
     id: 2,
     title: "Github",
-    url: "github.com/tufaelahmedbd",
+    url: "https://github.com/tufaelahmedbd",
   },
   {
     id: 3,
     title: "LinkedIn",
-    url: "linkedin.com/in/tufaelahmedbd/",
+    url: "https://www.linkedin.com/in/tufaelahmedbd/",
   },
   {
     id: 4,
     title: "Leetcode",
-    url: "leetcode.com/tufaelahmedbd/",
+    url: "https://leetcode.com/tufaelahmedbd/",
   },
   {
     id: 2,
     title: "Twitter",
-    url: "twitter.com/tufaelahmedbd",
+    url: "https://twitter.com/tufaelahmedbd",
   },
 ];
 const Socials = () => {

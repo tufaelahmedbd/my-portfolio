@@ -61,7 +61,7 @@ const Navbar = ({ footernav }) => {
         </li>
         <li>
           <a
-            href="https//:www.google.com"
+            href="https://docs.google.com/document/d/1CINrWfKV2G8tKtVcr7RKgmamKaJGj66FDiJlBAtvfJA/edit"
             target="_blank"
             rel=" noreferrer"
             className="link-item"

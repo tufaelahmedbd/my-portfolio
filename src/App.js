@@ -7,6 +7,7 @@ import CustomCursor from "./components/CustomCursor";
 import { useSmoothScroll } from "./hooks/useSmoothScroll";
 import { useRef } from "react";
 import { useCustomCursor } from "./hooks/useCustomCursor";
+import NotFound from "./components/Notfound";
 
 const App = () => {
   const innerCursorRef = useRef(null);
@@ -25,6 +26,7 @@ const App = () => {
       <Socials />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Navbar footernav />
       <Footer />

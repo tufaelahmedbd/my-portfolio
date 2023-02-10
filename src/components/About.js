@@ -38,7 +38,7 @@ const About = () => {
             passion for web development.
           </p>
           <a
-            href="https://www.google.com"
+            href="https://docs.google.com/document/d/1CINrWfKV2G8tKtVcr7RKgmamKaJGj66FDiJlBAtvfJA/edit"
             target="_blank"
             rel="noreferrer"
             className=" inline-block mt-10 uppercase py-8 px-14 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"

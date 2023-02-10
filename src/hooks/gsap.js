@@ -194,7 +194,7 @@ export const useInputRefReveal = (items, delay = 0) => {
     gsap.fromTo(
       el,
       {
-        y: 200,
+        y: 500,
       },
       {
         y: 0,
