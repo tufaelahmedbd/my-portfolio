@@ -29,7 +29,13 @@ const data = [
     img2: "https://res.cloudinary.com/duunz0l4s/image/upload/v1680367027/my-portfolio/Tech2_zquajg.svg",
     description:
       "TechAlpha is an e-commerce website that implements a shopping cart using Redux Toolkit and RTK Query. It allows users to add or remove items, increase or decrease the quantity of items, and view the total cost of all items in the cart. The product data is served via a JSON server and cart items are stored in the client's browser's local storage.",
-    tools: ["React.js", "Hooks", "TailwindCSS"],
+    tools: [
+      "React.js",
+      "Redux.js",
+      "Redux toolkit",
+      "RTK Query",
+      "TailwindCSS",
+    ],
     liveLink: "https://tech-alphaa.netlify.app/",
     frontEndLink: "https://github.com/tufaelahmedbd/tech-alpha",
   },
