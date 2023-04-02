@@ -258,6 +258,13 @@ input[type="submit"] {
   .section-title {
     font-size: 6rem;
   }
+  .hero-img,
+  .project-right,
+  .about-left {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -272,5 +279,12 @@ input[type="submit"] {
 
   .section-title {
     font-size: 5rem;
+  }
+  .hero-img,
+  .project-right,
+  .about-left {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
   }
 }

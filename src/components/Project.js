@@ -19,7 +19,7 @@ const Project = ({ project }) => {
           {String(project.id).padStart(2, 0)}
         </span>
         <h3 className=" uppercase text-5xl leading-relaxed text-cyan-400">
-          {project.title}
+          {project.title} - {project.temp}
         </h3>
         <p className=" text-white/75">{project.description}</p>
         <span className=" text-cyan-400 flex gap-5 flex-wrap">
@@ -46,12 +46,12 @@ const Project = ({ project }) => {
           </a>
           {project.backEndLink && (
             <a
-              href={project.frontEndLink}
+              href={project.backEndLink}
               target="_blank"
               rel="noreferrer"
               className=" uppercase py-8 px-14 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
             >
-              Front-end Code
+              Back-end Code
             </a>
           )}
         </div>

@@ -4,8 +4,8 @@ import { useProjectLeftRightReveal } from "../hooks/gsap";
 import SectionTitle from "./SectionTitle";
 
 const data = {
-  img1: "https://res.cloudinary.com/duunz0l4s/image/upload/v1675403782/my-portfolio/Screenshot_2_vkhuap.png",
-  img2: "https://res.cloudinary.com/duunz0l4s/image/upload/v1675414975/my-portfolio/24785049_2000117480230956_3844521745025672691_o_m4rbxn.jpg",
+  img1: "https://res.cloudinary.com/duunz0l4s/image/upload/v1680382866/my-portfolio/File0380_s0n1eg.jpg",
+  img2: "https://res.cloudinary.com/duunz0l4s/image/upload/v1680379414/my-portfolio/Cox-46_3_ooofjk.jpg",
 };
 
 const About = () => {
@@ -21,13 +21,14 @@ const About = () => {
         <div className="about-left" ref={aboutLeftRef}></div>
         <div className="about-right" ref={aboutRightRef}>
           <p>
-            I am a final year computer science student with a strong background
-            in data structures, algorithms, and object-oriented programming. I
-            have a passion for web development and am skilled in a range of
-            technologies including React.js, Redux.js, Redux Toolkit,
-            JavaScript, TailwindCSS, HTML, CSS, Bootstrap, Git & GitHub, and
-            Firebase. My drive for continuous learning has led me to explore
-            backend development.
+            As a CSE final year student and frontend developer, I excel in HTML,
+            CSS, Bootstrap, TailwindCSS, React.js, React Router, JavaScript, and
+            GSAP. My proficiency in Nodejs, Express.js, and MongoDB enables me
+            to build scalable web applications, and my problem-solving skills
+            and knowledge of data structures and algorithms allow me to deliver
+            optimal solutions. I am passionate, dedicated, and a hardworking
+            individual seeking an exciting frontend position to utilize my
+            skills in a challenging and dynamic environment.
           </p>
           <p className="mt-10">
             I am taking advantage of my current student status by immersing

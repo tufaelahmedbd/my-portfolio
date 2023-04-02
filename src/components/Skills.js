@@ -6,7 +6,7 @@ const data = [
   { id: 1, title: "HTML" },
   { id: 2, title: "CSS" },
   { id: 3, title: "Bootstrap" },
-  { id: 4, title: "Tailwind CSS" },
+  { id: 4, title: "TailwindCSS" },
   { id: 5, title: "JavaScript" },
   { id: 6, title: "React.js" },
   { id: 7, title: "React Router" },
@@ -15,6 +15,10 @@ const data = [
   { id: 10, title: "Axios" },
   { id: 11, title: "GSAP" },
   { id: 12, title: "Firebase" },
+  { id: 13, title: "MongoDB" },
+  { id: 14, title: "Express.js" },
+  { id: 15, title: "Node.js" },
+  { id: 16, title: "Mongoose.js" },
 ];
 
 const Skills = () => {

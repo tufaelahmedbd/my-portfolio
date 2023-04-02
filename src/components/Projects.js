@@ -3,36 +3,47 @@ import SectionTitle from "./SectionTitle";
 const data = [
   {
     id: 1,
-    title: "Foodverse",
-    img1: "https://res.cloudinary.com/duunz0l4s/image/upload/v1675415032/my-portfolio/foodverse1_i90vcn.png",
-    img2: "https://res.cloudinary.com/duunz0l4s/image/upload/v1675415033/my-portfolio/foodverse2_nwgpez.png",
+    title: "Proxima",
+    temp: "A Project Management App",
+    img1: "https://res.cloudinary.com/duunz0l4s/image/upload/v1680367025/my-portfolio/proxima2_laaxav.svg",
+    img2: "https://res.cloudinary.com/duunz0l4s/image/upload/v1680367024/my-portfolio/proxima1_brdcpg.svg",
     description:
-      "Foodverse is a food website featuring detailed descriptions and ingredients for various food items. It has a fast search bar and users can save items to a favorites list.",
-    tools: ["React.js", "React-Router", "TailwindCSS"],
-    liveLink: "https://foodverse-tufael.netlify.app/",
-    frontEndLink: "https://github.com/tufaelahmedbd/foodverse",
+      "Proxima is a robust project management platform created using the MERN stack. The application empowers users to effortlessly create, update, and delete their projects. With highly secure features such as sturdy JWT authentication and robust frontend route protection, Proxima ensures the utmost security of user data.",
+    tools: [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "TailwindCSS",
+      "Context Api",
+    ],
+    liveLink: "https://proxima-tufael.netlify.app/",
+    frontEndLink: "https://github.com/tufaelahmedbd/proxima-client",
+    backEndLink: "https://github.com/tufaelahmedbd/proxima-server",
   },
   {
     id: 2,
+    title: "Tech Alpha",
+    temp: "An Online Electronics Accessories Store",
+    img1: "https://res.cloudinary.com/duunz0l4s/image/upload/v1680367032/my-portfolio/Tech1_cvycu2.svg",
+    img2: "https://res.cloudinary.com/duunz0l4s/image/upload/v1680367027/my-portfolio/Tech2_zquajg.svg",
+    description:
+      "TechAlpha is an e-commerce website that implements a shopping cart using Redux Toolkit and RTK Query. It allows users to add or remove items, increase or decrease the quantity of items, and view the total cost of all items in the cart. The product data is served via a JSON server and cart items are stored in the client's browser's local storage.",
+    tools: ["React.js", "Hooks", "TailwindCSS"],
+    liveLink: "https://tech-alphaa.netlify.app/",
+    frontEndLink: "https://github.com/tufaelahmedbd/tech-alpha",
+  },
+  {
+    id: 3,
     title: "Todo App",
-    img1: "https://res.cloudinary.com/duunz0l4s/image/upload/v1675415032/my-portfolio/todo2_clbttj.png",
-    img2: "https://res.cloudinary.com/duunz0l4s/image/upload/v1675415032/my-portfolio/todo1_v89voz.png",
+    temp: "A simple todo application",
+    img1: "https://res.cloudinary.com/duunz0l4s/image/upload/v1680367027/my-portfolio/todo1_ihztr1.svg",
+    img2: "https://res.cloudinary.com/duunz0l4s/image/upload/v1680367025/my-portfolio/todo2_hzfuas.svg",
     description:
       "This is a Todo application built with ReactJS and Hooks, using TailwindCSS for styling. The app allows users to create, update, delete, and add todo tasks. The user interface is responsive and user-friendly",
     tools: ["React.js", "Hooks", "TailwindCSS"],
     liveLink: "https://todo-app-tufael.netlify.app/",
     frontEndLink: "https://github.com/tufaelahmedbd/todo-app",
-  },
-  {
-    id: 3,
-    title: "Immemorial",
-    img1: "https://res.cloudinary.com/duunz0l4s/image/upload/v1675415032/my-portfolio/immemorial1_yu7srh.png",
-    img2: "https://res.cloudinary.com/duunz0l4s/image/upload/v1675415031/my-portfolio/immemorial2_ls7t1z.png",
-    description:
-      "Immemorial is a website focused on 90's music items. It uses ReactJS and GSAP to deliver a smooth user experience with eye-catching animations. The website is designed to provide an enjoyable and memorable way to explore classic 90's music items.",
-    tools: ["React.js", "React-Router", "GSAP", "TailwindCSS"],
-    liveLink: "https://immemorial-tufael.netlify.app/",
-    frontEndLink: "https://github.com/tufaelahmedbd/immemorial",
   },
 ];
 const Projects = () => {
