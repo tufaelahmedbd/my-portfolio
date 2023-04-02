@@ -8,11 +8,12 @@ const Bio = () => {
   return (
     <div className="bio mt-20 container mx-auto overflow-hidden">
       <p ref={bioRef}>
-        I am a computer science professional with expertise in React,
-        Redux,Redux Toolkit,javaScript, Tailwind CSS, and GSAP. I am motivated,
-        passionate, and a quick learner, always seeking new challenges and
-        opportunities to expand my skills.I am dedicated to using technology to
-        create meaningful solutions and improve people's lives.
+        As an accomplished final year computer science professional, I boast
+        extensive proficiency in React, Redux, Redux Toolkit, javascript,
+        MongoDB, Express.js, Node.js, Tailwind CSS, and GSAP.I possess a strong
+        drive to learn and grow, always seeking new challenges. Through
+        technology, I aim to make a significant impact by creating meaningful
+        solutions.
       </p>
     </div>
   );

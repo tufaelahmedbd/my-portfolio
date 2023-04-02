@@ -1,16 +1,35 @@
 import { useRef } from "react";
 import SectionTitle from "./SectionTitle";
 import { useInputRefReveal } from "../hooks/gsap";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const inputRef = useRef(null);
   const input2Ref = useRef(null);
   const input3Ref = useRef(null);
   const input4Ref = useRef(null);
+
+  const formRef = useRef(null);
   const inputRefs = [inputRef, input2Ref, input3Ref, input4Ref];
   useInputRefReveal(inputRefs);
   const sendEmail = (e) => {
     e.preventDefault();
+    //--emailjs integration
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        formRef.current,
+        process.env.REACT_APP_PUBLIC_ID
+      )
+      .then(
+        () => {
+          console.log("Message sent");
+        },
+        () => {
+          console.log("Message not sent");
+        }
+      );
 
     //--reset--
     e.target.querySelector(".fullname").value = "";
@@ -23,6 +42,7 @@ const Contact = () => {
       <form
         onSubmit={sendEmail}
         className=" mt-40 grid grid-cols-1 lg:grid-cols-2 gap-20"
+        ref={formRef}
       >
         <div className="form-control overflow-hidden">
           <input
